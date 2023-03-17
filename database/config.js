@@ -6,8 +6,7 @@ const dbCon = async() => {
         
         await mongoose.connect( process.env.MONGODB_CNN, {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
-            serverSelectionTimeoutMS: 30000
+            useUnifiedTopology: true
         });
 
         // await mongoose.connect( process.env.MONGODB_CNN );
