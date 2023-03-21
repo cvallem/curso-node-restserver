@@ -4,13 +4,12 @@ const dbCon = async() => {
 
     try {
         
-        await mongoose.connect( process.env.MONGODB_CNN, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            serverSelectionTimeoutMS: 30000
-        });
+        // await mongoose.connect( process.env.MONGODB_CNN, {
+        //     useNewUrlParser: true,
+        //     useUnifiedTopology: true
+        // });
 
-        // await mongoose.connect( process.env.MONGODB_CNN );
+        await mongoose.connect( process.env.MONGODB_CNN );
 
         console.log('Base de datos online.')
 
